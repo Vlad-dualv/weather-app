@@ -4,10 +4,53 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Weather App</title>
     <script type="module" crossorigin src="/weather-app/index.js"></script>
+    <link rel="modulepreload" crossorigin href="/weather-app/assets/vendor-Cn2Vr82J.js">
+    <link rel="stylesheet" crossorigin href="/weather-app/assets/index-DEpi8ZU0.css">
   </head>
   <body>
-    <main></main>
+    <main>
+      <div class="container">
+        <form>
+          <input
+            id="query"
+            type="text"
+            name="query"
+            spellcheck="false"
+            placeholder="Enter city name" required
+          />
+          <button type="submit"><image src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC8AAAA3CAMAAACrfONoAAAAVFBMVEUAAABhYWFgYGBhYWFgYGBiYmJhYWFgYGBiYmJgYGBhYWFhYWFhYWFgYGBhYWFhYWFjY2NgYGBiYmJkZGRiYmJiYmJgYGBhYWFhYWFiYmJfX19iYmLpUSnAAAAAG3RSTlMA8BDQIHCgQIAwwJDfb2G/CE/LKevWGLCTiDMCozdnAAABXElEQVRIx71V2XLDIAwEmSsQfDRHD/7/PztBwXgCBNGH7osZvBJaJCT2CuHVsvDAl0V5wToQ7hyOODvxjq1CCdWyABOq4Aaq9Cm0MFUMTnz/K7UGBlrL3QM/vdLnJ53Loy+QaXsuvNdDBcMrJ0CxWbqCQmohq/XX4EZctw3MniZMZd17DpenxKki9roGdXRvmuQcMR7gsvxORC6uY0VK9h4y3kgOBzp8wICyZQ9TikLhogeZbsg+FrrL1w+a/QM/yaUI5onfpWcefon+/0Hv58j9j+Z3tH4G63O4/sff1/j7ZQKfP7E/5P4Dnf4z2t+G++d4fy77v4cj2+f+354v/jlffJ5Qc0NWC9c7kopQW/hYyfMXJ7gjzffJCXbBY7fWkJfKWh64tUpiBWwhlQMR30kCFQsqIfPv55QFIn5QwoVsIKPBjS5BDUpYb/GOgMqPaftaGR3bdWNDiLH8AhauQap4KrAvAAAAAElFTkSuQmCC" class="search-icon" alt="search city" width="20px" height="20px"></button>
+        </form>
+        <div class="weather-container">
+          <img src="/weather-app/assets/clouds-6X9q-B76.png" class="weather-icon" alt="current weather" width="100px" height="100px">
+          <h1 class="temperature">22°C</h1>
+          <h2 class="city">Leiria</h2>
+          <div class="details">
+            <div class="col">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE8AAABCCAMAAAAhdHtqAAAAOVBMVEUAAAD///////////////////////////////////////////////////////////////////////8KOjVvAAAAEnRSTlMAwH/gX/AQIDCw0E+QQG+fP6AEV1jkAAACK0lEQVRYw+1YzdarIAxkAiLIj+D7P+zVhmss2OW3Y1btSYZM6jkzFXUA5FSHNXssx4YY+oo1O/ShsRvbl0LEBnVc0Hl9UnDcWKJ7UvZDsD+HubgcJ6AIzPbGNspVuLSRB3/MtlH0ZzYqVfDHNszm7TMb3sjXEzgP4L7/co3nygbNcmtqlVS5d0Eje9MqMrtRgnpg5WH3DgLLw8YfjJGIgEjBqh4uk0clM1DUaqjCU3ZqYmJiYkBZ1StsKe4XpZQfldUpsU+BNVvzwr0/M/iD4UPvapexQzX/NXagMDStXxRGP2zN7MdQyRA4XkxZbQlx4VNySoE8N+XiziVJc0BRSolqaztXdyVznyfj+HRuFcd3w+ay5esaklpf8SK5IlijfqNIjknQdcRkcnKvzzoFSkm9ISUKyaqJiYmJEZTLm9cUQ0SlvOVKOCuh2LHkChk1Gpv8Cx+jJe3L7fZiYOLJUGK8Q0hItAili5bexnGZZeZg8JQN7S0k0tWaDLiLKFBkSg3uGhoqD4tnhVqXSbemuowhIZpGraJJtPbB+ilr3BQZho9m3BQZho8O1PcwsELo4X5W5rvHxMTEDwCUxyww5LEh0mg4ifazslMaM4ciouocVBxfHLR3V3HQ4ZIKCpDq03Y3AMv3a0bw3ApAi4yHggXx4fYAkcdyN4qea/Md+tYrYzV2ithEkagd745ElFy29VdqkjljFuCjJA0pkC/VGtWMj61equFZwV/gHx1XNKBFsTWrAAAAAElFTkSuQmCC" alt="current humidity" width="30px" height="30px">
+              <div>
+                <p class="humidity">50%</p>
+                <p class="humidity-text">Humidity</p>
+              </div>
+            </div>
+            <div class="col">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAE8AAABOCAMAAABWtrsRAAAAP1BMVEUAAAD///////////////////////////////////////////////////////////////////////////////9Du/pqAAAAFHRSTlMAgMBA8BAg4GAw0KCwP3CQUJ9vj32Olh0AAAMjSURBVFjD1VjblqMgELRb7jhGDf//rYtCSXbIzAmwL1svekwsq7tL7Gbqg9x25hA0L4eahjEv4QWO5BCb5fAN4higeyYKv84RhlzSaHsTd4njrVxRJE7+uY/OnWLmbxd9iDA9fCedr9O/nRI7Qt7jbY+3NYqEotk55lQHhic7wYuRhZBb+XTMXXYg314hPKs5hRRvSTEdf/k5SYwe1218AsmjyzPRgJsXN6FqFbjFGyRO9Hx7BYmLZ0sL3yP/X4pLErCeuvCYxmqYRFCsgcQhH1sDH8KNniZcQ+JsJqaGRSqHI6tXATwU69XEp8Fb+cjnIzfxcTrC1AB4tnyUX2+hMo+6+YRMZeaKb3nhNeEtUjLUZWLkbZHXv9epzl+Jm8NPyNlykJEhivnwoC0bmrB4vYNJ67HAW8SZzlbhimLQFpA+Y1bVIpbCtTBoA1T1mTiQEBRqBPbQdwKkyIVSuwgj0CmfPhfKjrHh82Szj9QQnX6c1ck0GjLX4Z5GOqwSOskcg9X3Yh9P5lE6I8p3WYC4n02HXAvkr1ug/NqS2QqFCsCgZwAzzgZ7lN6hG85vRVuh7IOd/ktYWrgLO9GXetNhD8GRqlriQezqb/sxdeLBOjHSq7xlGoBaL0qGC7G+jC4Izg7x1QONTgoZWodAZ8h3PfROndggZb1X1OXfeMXfw8QjjOG42+sFJadOsLgkYpxAZUe9Qqisb/SFeS6kfvryGswNB/2KAzWc08v1rAm5NP4f1GPBSIqS1oOEygHTJ4ZxpT31pOu0o8WgxCc9/wpvk7xM5Kq0xwAf6PPb5xlTzwv5iumdZ8R7vrWVLyDuKl5qj1eBB2NpNciC90PAt/5bWKYMsk2tJOcyzujOSqfryxz8OVa8TwsWlRPWwc74/VMoOFmenua5bIYZpDHqbwtYl3Y5aOZTG4I30PkZMGJUPYUwE0T7qQ0es1XZ8tQkIb59Q0yJl+FXzoZKB7hDexNsPf6Crj1aJF2YSrfDLlYPIbwCSBKhvymYxcnoDuQ+DyC+v6HCNgJHuFzlbepGPWAIeKYb9qFvMm/ANgQ1b0TrjMoAfwCb+HulBA/8GgAAAABJRU5ErkJggg==" alt="current wind speed" width="30px" height="30px">
+              <div>
+                <p class="wind">15 km/h</p>
+                <p class="wind-text">Wind Speed</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
