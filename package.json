@@ -6,7 +6,6 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build --base=/weather-app/",
-    "push": "git add .; git commit -m 'update'; git push;",
     "preview": "vite preview"
   },
   "devDependencies": {
