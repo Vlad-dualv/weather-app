@@ -4,11 +4,52 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Weather App</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <main></main>
+    <main>
+      <div class="container">
+        <form>
+          <input
+            id="query"
+            type="text"
+            name="query"
+            spellcheck="false"
+            placeholder="Enter city name" required
+          />
+          <button type="submit"><image src="./img/search.png" class="search-icon" alt="search city" width="20px" height="20px"></button>
+        </form>
+        <div class="weather-container">
+          <img src="./img/clouds.png" class="weather-icon" alt="current weather" width="100px" height="100px">
+          <h1 class="temperature">22°C</h1>
+          <h2 class="city">Leiria</h2>
+          <div class="details">
+            <div class="col">
+              <img src="./img/humidity.png" alt="current humidity" width="30px" height="30px">
+              <div>
+                <p class="humidity">50%</p>
+                <p class="humidity-text">Humidity</p>
+              </div>
+            </div>
+            <div class="col">
+              <img src="./img/wind.png" alt="current wind speed" width="30px" height="30px">
+              <div>
+                <p class="wind">15 km/h</p>
+                <p class="wind-text">Wind Speed</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
     <script type="module" src="./main.js"></script>
   </body>
 </html>
