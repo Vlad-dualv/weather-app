@@ -9,7 +9,8 @@ export function render(data) {
 
   switch (data.weather[0].main) {
     case 'Clouds':
-      refs.weatherIcon.src = './img/clouds.png';
+      refs.weatherIcon.src =
+        'https://github.com/Vlad-dualv/weather-app/blob/main/clouds.png';
       break;
     case 'Drizzle':
       refs.weatherIcon.src = './img/drizzle.png';
