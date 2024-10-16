@@ -106,7 +106,7 @@ button:focus {
   margin: 0 auto;
   background-color: transparent;
 }
-
+/*
 .weather-container {
   max-height: 0;
   overflow: hidden;
@@ -118,6 +118,7 @@ button:focus {
   max-height: 800px;
   opacity: 1;
 }
+  */
 
 .weather-icon {
   margin: 20px auto;
