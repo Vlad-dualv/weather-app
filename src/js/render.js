@@ -12,18 +12,18 @@ export function render(data) {
       refs.weatherIcon.src = './src/img/clouds.png';
       break;
     case 'Drizzle':
-      refs.weatherIcon.src = './img/drizzle.png';
+      refs.weatherIcon.src = './src/img/drizzle.png';
       break;
     case 'Mist':
-      refs.weatherIcon.src = './img/mist.png';
+      refs.weatherIcon.src = './src/img/mist.png';
       break;
     case 'Snow':
-      refs.weatherIcon.src = './img/snow.png';
+      refs.weatherIcon.src = './src/img/snow.png';
       break;
     case 'Rain':
-      refs.weatherIcon.src = './img/rain.png';
+      refs.weatherIcon.src = './src/img/rain.png';
       break;
     default:
-      refs.weatherIcon.src = './img/clear.png';
+      refs.weatherIcon.src = './src/img/clear.png';
   }
 }
