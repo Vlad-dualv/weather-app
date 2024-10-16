@@ -135,7 +135,6 @@ button:focus {
 
 .details {
   display: flex;
-  flex-direction: raw;
   margin-top: 40px;
   justify-content: space-around;
   align-items: center;
