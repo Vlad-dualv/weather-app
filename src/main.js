@@ -1,4 +1,6 @@
 import axios from 'axios';
+import iziToast from 'izitoast';
+import 'izitoast/dist/css/iziToast.min.css';
 import { getWeather } from './js/weatherAPI';
 import { render } from './js/render';
 
@@ -6,7 +8,7 @@ export const refs = {
   form: document.querySelector('form'),
   searchInput: document.getElementById('query'),
   searchBtn: document.querySelector('button'),
-  weatherContainer: document.querySelector('.weather'),
+  weatherContainer: document.querySelector('.weather-container'),
   weatherIcon: document.querySelector('.weather-icon'),
   weatherDescription: document.querySelector('.description'),
   cityName: document.querySelector('.city'),
@@ -28,10 +30,21 @@ async function handleSubmit(event) {
       render(data);
     } catch (error) {
       console.log(error);
-      alert('Invalid city name');
+      displayError('Invalid city name');
     }
   } else {
-    alert('Empty field!');
+    displayError('Empty field!');
   }
   refs.form.reset();
+}
+
+function displayError(message) {
+  iziToast.error({
+    title: 'Error',
+    message: message,
+    backgroundColor: 'red',
+    position: 'topCenter',
+    timeout: 2000,
+    maxWidth: '300px',
+  });
 }

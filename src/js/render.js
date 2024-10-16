@@ -1,7 +1,7 @@
 import { refs } from '../main.js';
 
 export function render(data) {
-  refs.weatherContainer.style.display = 'block';
+  refs.weatherContainer.classList.add('show');
   refs.cityName.innerHTML = data.name;
   refs.temperature.innerHTML = Math.round(data.main.temp) + '°C';
   refs.humidity.innerHTML = data.main.humidity + '%';

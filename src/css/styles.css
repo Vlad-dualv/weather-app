@@ -108,7 +108,15 @@ button:focus {
 }
 
 .weather-container {
-  display: none;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+  opacity: 0;
+}
+
+.weather-container.show {
+  max-height: 800px;
+  opacity: 1;
 }
 
 .weather-icon {
