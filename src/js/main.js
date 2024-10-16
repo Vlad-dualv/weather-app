@@ -1,8 +1,8 @@
 import axios from 'axios';
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
-import { getWeather } from './js/weatherAPI';
-import { render } from './js/render';
+import { getWeather } from './weatherAPI';
+import { render } from './render';
 
 export const refs = {
   form: document.querySelector('form'),
