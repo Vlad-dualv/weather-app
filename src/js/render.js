@@ -9,7 +9,7 @@ export function render(data) {
 
   switch (data.weather[0].main) {
     case 'Clouds':
-      refs.weatherIcon.src = './img/clouds.png';
+      refs.weatherIcon.src = './src/img/clouds.png';
       break;
     case 'Drizzle':
       refs.weatherIcon.src = './img/drizzle.png';
