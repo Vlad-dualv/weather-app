@@ -1,3 +1,4 @@
+/*
 import { refs } from '../main.js';
 
 export function render(data) {
@@ -27,3 +28,4 @@ export function render(data) {
       refs.weatherIcon.src = './img/clear.png';
   }
 }
+  */
