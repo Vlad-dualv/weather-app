@@ -9,21 +9,21 @@ export function render(data) {
 
   switch (data.weather[0].main) {
     case 'Clouds':
-      refs.weatherIcon.src = '../src/img/search.png';
+      refs.weatherIcon.src = '../img/clouds.png';
       break;
     case 'Drizzle':
-      refs.weatherIcon.src = '../src/img/drizzle.png';
+      refs.weatherIcon.src = '../img/drizzle.png';
       break;
     case 'Mist':
-      refs.weatherIcon.src = '../src/img/mist.png';
+      refs.weatherIcon.src = '../img/mist.png';
       break;
     case 'Snow':
-      refs.weatherIcon.src = '../src/img/snow.png';
+      refs.weatherIcon.src = '../img/snow.png';
       break;
     case 'Rain':
-      refs.weatherIcon.src = '../src/img/rain.png';
+      refs.weatherIcon.src = '../img/rain.png';
       break;
     default:
-      refs.weatherIcon.src = '../src/img/clear.png';
+      refs.weatherIcon.src = '../img/clear.png';
   }
 }
