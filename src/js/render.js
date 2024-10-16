@@ -9,22 +9,21 @@ export function render(data) {
 
   switch (data.weather[0].main) {
     case 'Clouds':
-      refs.weatherIcon.src =
-        'https://github.com/Vlad-dualv/weather-app/blob/main/clouds.png';
+      refs.weatherIcon.src = '/clouds.png';
       break;
     case 'Drizzle':
-      refs.weatherIcon.src = './img/drizzle.png';
+      refs.weatherIcon.src = '/drizzle.png';
       break;
     case 'Mist':
-      refs.weatherIcon.src = './img/mist.png';
+      refs.weatherIcon.src = '/mist.png';
       break;
     case 'Snow':
-      refs.weatherIcon.src = './img/snow.png';
+      refs.weatherIcon.src = '/snow.png';
       break;
     case 'Rain':
-      refs.weatherIcon.src = './img/rain.png';
+      refs.weatherIcon.src = '/rain.png';
       break;
     default:
-      refs.weatherIcon.src = './img/clear.png';
+      refs.weatherIcon.src = '/clear.png';
   }
 }
