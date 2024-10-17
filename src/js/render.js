@@ -14,7 +14,7 @@ export function render(data) {
     case 'Drizzle':
       refs.weatherIcon.textContent = '🌦️';
       break;
-    case 'Haze':
+    case 'Mist':
       refs.weatherIcon.textContent = '🌫️';
       break;
     case 'Snow':
