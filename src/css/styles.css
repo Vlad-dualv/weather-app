@@ -38,6 +38,7 @@ a {
 }
 
 button {
+  display: block;
   cursor: pointer;
 }
 
@@ -95,6 +96,7 @@ button {
   width: 40px;
   height: 40px;
   transition: background-color 200ms ease-in;
+  font-size: 26px;
 }
 
 button:hover,
