@@ -1,4 +1,4 @@
-import { refs } from '../main.js';
+import { refs } from './main';
 
 export function render(data) {
   refs.weatherContainer.classList.add('show');
@@ -9,21 +9,27 @@ export function render(data) {
 
   switch (data.weather[0].main) {
     case 'Clouds':
-      refs.weatherIcon.src = './img/clouds.png';
+      refs.weatherIcon.textContent = '🌥️';
       break;
     case 'Drizzle':
-      refs.weatherIcon.src = './img/drizzle.png';
+      refs.weatherIcon.textContent = '🌦️';
       break;
     case 'Mist':
-      refs.weatherIcon.src = './img/mist.png';
+      refs.weatherIcon.textContent = '🌫️';
       break;
     case 'Snow':
-      refs.weatherIcon.src = './img/snow.png';
+      refs.weatherIcon.textContent = '❄️';
       break;
     case 'Rain':
-      refs.weatherIcon.src = './img/rain.png';
+      refs.weatherIcon.textContent = '🌧️';
+      break;
+    case 'Thunderstorm':
+      refs.weatherIcon.textContent = '🌩️';
+      break;
+    case 'Clear':
+      refs.weatherIcon.textContent = '☀️';
       break;
     default:
-      refs.weatherIcon.src = './img/clear.png';
+      refs.weatherIcon.textContent = '☁️';
   }
 }

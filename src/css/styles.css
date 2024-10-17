@@ -122,6 +122,7 @@ button:focus {
 .weather-icon {
   margin: 20px auto;
   background-color: transparent;
+  font-size: 92px;
 }
 
 .temperature {
@@ -175,8 +176,7 @@ p {
 
   .weather-icon {
     margin: 50px auto 30px;
-    width: 150px;
-    height: 150px;
+    font-size: 120px;
   }
 
   .temperature {
@@ -228,8 +228,7 @@ p {
 
   .weather-icon {
     margin: 70px auto 30px;
-    width: 250px;
-    height: 250px;
+    font-size: 130px;
   }
 
   .temperature {

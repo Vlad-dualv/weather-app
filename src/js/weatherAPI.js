@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { refs, query } from '../main';
+import { refs, query } from './main';
 
 const API_KEY = 'f1fbcd3bf9d191b55c2bb9d6bb99db04';
 const myAxios = axios.create({
